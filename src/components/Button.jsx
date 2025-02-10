@@ -23,7 +23,7 @@ export function Button({
   ...props
 }) {
   const baseStyles =
-    "inline-flex items-center rounded-lg font-medium shadow-sm";
+    "inline-flex items-center justify-center rounded-lg font-medium shadow-sm";
 
   const variants = {
     filled:
