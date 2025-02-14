@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 
@@ -18,8 +19,8 @@ export function Anchor({ className, children, ...props }) {
   const classes = twMerge(clsx(baseStyles), className);
 
   return (
-    <a className={classes} {...props}>
+    <Link className={classes} {...props} to={props.href}>
       {children}
-    </a>
+    </Link>
   );
 }
